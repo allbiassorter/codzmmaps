@@ -278,7 +278,7 @@ function start() {
   });
 
   if (characterDataToSort.length < 2) {
-    alert("Cannot sort with less than two characters. Please reselect.");
+    alert("Cannot sort with less than two maps. Please reselect.");
     return;
   }
 
