@@ -185,7 +185,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "TranZit",
-    img: "MgzqjFK.png",
+    img: "k94nVLk.png",
     opts: {
       games: ["BO2"],
       dlc: ["nondlc"],
@@ -193,7 +193,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Bus Depot",
-    img: "ohmetZh.png",
+    img: "0tmf0e8.png",
     opts: {
       games: ["BO2"],
       dlc: ["nondlc"],
@@ -201,7 +201,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Town",
-    img: "aDIf0pN.png",
+    img: "3I4wYS9.png",
     opts: {
       games: ["BO2"],
       dlc: ["nondlc"],
@@ -209,7 +209,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Farm",
-    img: "2Pr8b2N.png",
+    img: "9GqQcJ0.png",
     opts: {
       games: ["BO2"],
       dlc: ["nondlc"],
@@ -217,7 +217,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nuketown Zombies",
-    img: "htOMdDQ.png",
+    img: "Q6IfATf.png",
     opts: {
       games: ["BO2"],
       dlc: ["bo2dlc"],
@@ -225,7 +225,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Die Rise",
-    img: "PrRPujP.png",
+    img: "Gnn7PnY.png",
     opts: {
       games: ["BO2"],
       dlc: ["bo2dlc"],
@@ -233,7 +233,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Mob of the Dead",
-    img: "ze79bFC.png",
+    img: "uSHJ110.png",
     opts: {
       games: ["BO2"],
       dlc: ["bo2dlc"],
@@ -241,7 +241,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Buried",
-    img: "WMjyRLJ.png",
+    img: "BwSaP54.png",
     opts: {
       games: ["BO2"],
       dlc: ["bo2dlc"],
@@ -249,7 +249,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Origins",
-    img: "VT9mTGb.png",
+    img: "5JiENNE.png",
     opts: {
       games: ["BO2"],
       dlc: ["bo2dlc"],
@@ -412,14 +412,6 @@ dataSet[dataSetVersion].characterData = [
   {
     name: "Rave in the Redwoods",
     img: "qGMjnYk.png",
-    opts: {
-      games: ["IW"],
-      dlc: ["iwdlc"],
-    },
-  },
-  {
-    name: "Kochiya Sanae",
-    img: "ATTRSWU.png",
     opts: {
       games: ["IW"],
       dlc: ["iwdlc"],
