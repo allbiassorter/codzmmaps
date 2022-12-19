@@ -74,6 +74,12 @@ dataSet[dataSetVersion].options = [
       { name: "World at War DLCs", key: "wawdlc" },
       { name: "Black Ops 1 DLCs", key: "bo1dlc" },
       { name: "Black Ops 2 DLCs", key: "bo2dlc" },
+      {
+        name: "Advanced Warfare DLCs",
+        tooltip:
+          "Keep this enabled if you want Exo-Zombies maps in your sorter",
+        key: "awdlc",
+      },
       { name: "Black Ops 3 DLCs ", key: "bo3dlc" },
       {
         name: "Black Ops 3 ZC",
@@ -83,12 +89,30 @@ dataSet[dataSetVersion].options = [
       { name: "Infinite Warfare DLCs", key: "iwdlc" },
       { name: "WWII DLCs", key: "wwiidlc" },
       { name: "Black Ops 4 DLCs", key: "bo4dlc" },
+      {
+        name: "Black Ops Cold War DLCs",
+        tooltip:
+          "Keep this enabled if you want the Seasons maps (FBZ-Forsaken) in your sorter",
+        key: "cwdlc",
+      },
+      {
+        name: "Vanguard DLCs",
+        tooltip:
+          "Keep this enabled if you want the Seasons maps (Terra-Archon) in your sorter",
+        key: "vgdlc",
+      },
     ],
   },
   {
     name: "Remove Dead Ops Arcade",
     key: "DOA",
     tooltip: "Check this to remove Dead Ops Arcade from the bias sorter",
+    checked: false,
+  },
+  {
+    name: "Remove Non-Round Based Maps",
+    key: "NRB",
+    tooltip: "Check this to remove Non-Round Based Maps from the bias sorter",
     checked: false,
   },
 ];
@@ -257,50 +281,56 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Outbreak (Exo)",
-    img: "rshnJPV.png",
+    img: "4ti2cOL.png",
     opts: {
       games: ["AW"],
+      dlc: ["awdlc"],
     },
   },
   {
-    name: "Burgertown",
-    img: "qsceD4I.png",
+    name: "Infection",
+    img: "dfC4snq.png",
     opts: {
       games: ["AW"],
+      dlc: ["awdlc"],
     },
   },
   {
     name: "Carrier",
-    img: "pLdMjQ3.png",
+    img: "3xdION4.png",
     opts: {
       games: ["AW"],
+      dlc: ["awdlc"],
     },
   },
   {
     name: "Descent",
-    img: "8DLUAPf.png",
+    img: "M1TSi7S.png",
     opts: {
       games: ["AW"],
+      dlc: ["awdlc"],
     },
   },
   {
     name: "Shadows of Evil",
-    img: "6KyhLqE.png",
+    img: "DrQdHIj.png",
     opts: {
       games: ["BO3"],
+      dlc: ["nondlc"],
     },
   },
   {
     name: "Dead Ops Arcade 2: Cyber’s Avenging",
-    img: "99w0Chm.png",
+    img: "GyTcxJr.png",
     opts: {
       games: ["BO3"],
+      dlc: ["nondlc"],
       DOA: true,
     },
   },
   {
     name: "The Giant",
-    img: "yqNfNje.png",
+    img: "i0OgZ5h.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3dlc"],
@@ -308,7 +338,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Der Eisendrache",
-    img: "PrYzRcC.png",
+    img: "rrCYmxE.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3dlc"],
@@ -316,7 +346,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Zetsubou No Shima",
-    img: "ceo4DhK.png",
+    img: "OVlPD6t.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3dlc"],
@@ -324,7 +354,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Gorod Krovi",
-    img: "2YDuTk3.png",
+    img: "V5YobIG.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3dlc"],
@@ -332,7 +362,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Revelations",
-    img: "3zo4VKV.png",
+    img: "f2XJnvu.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3dlc"],
@@ -340,7 +370,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Nacht der Untoten (ZC)",
-    img: "8TLXMST.png",
+    img: "f5OuZMv.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -348,7 +378,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Zombie Verrückt (ZC)",
-    img: "IImsp7K.png",
+    img: "w6rFZOt.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -356,7 +386,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Shi No Numa (ZC)",
-    img: "MZXJQq5.png",
+    img: "34i6I2Y.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -364,7 +394,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Kino Der Toten (ZC)",
-    img: "aX4WIH8.png",
+    img: "ddCr8lG.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -372,7 +402,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ascension (ZC)",
-    img: "nPBvatH.png",
+    img: "lnl6jyC.png",
     opts: {
       ggames: ["BO3"],
       dlc: ["bo3zc"],
@@ -388,7 +418,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Moon (ZC)",
-    img: "bV0DaN7.png",
+    img: "ssdBwgq.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -396,7 +426,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Origins (ZC)",
-    img: "J11NjNj.png",
+    img: "9ptFu9A.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
@@ -404,14 +434,15 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Zombies in Spaceland",
-    img: "4Ufced2.png",
+    img: "tqqHqOs.png",
     opts: {
       games: ["IW"],
+      dlc: ["nondlc"],
     },
   },
   {
     name: "Rave in the Redwoods",
-    img: "qGMjnYk.png",
+    img: "I9wNR4B.png",
     opts: {
       games: ["IW"],
       dlc: ["iwdlc"],
@@ -419,7 +450,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Shaolin Shuffle",
-    img: "nQ78Lz7.png",
+    img: "w7WsCdp.png",
     opts: {
       games: ["IW"],
       dlc: ["iwdlc"],
@@ -427,7 +458,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Attack of the Radioactive Thing",
-    img: "yJaD5ZV.png",
+    img: "J0aPH8k.png",
     opts: {
       games: ["IW"],
       dlc: ["iwdlc"],
@@ -435,7 +466,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "The Beast from Beyond",
-    img: "xgAlECj.png",
+    img: "MJOAPzA.png",
     opts: {
       games: ["IW"],
       dlc: ["iwdlc"],
@@ -443,21 +474,23 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "The Final Reich",
-    img: "tZLYivt.png",
+    img: "3tvLQRX.png",
     opts: {
       games: ["WWII"],
+      lc: ["nondlc"],
     },
   },
   {
     name: "Gröesten Haus",
-    img: "VgJgaEf.png",
+    img: "GQsE6Xh.png",
     opts: {
       games: ["WWII"],
+      lc: ["nondlc"],
     },
   },
   {
     name: "The Darkest Shore",
-    img: "sqgJ2St.png",
+    img: "DBKUB6G.png",
     opts: {
       games: ["WWII"],
       dlc: ["wwiidlc"],
@@ -465,7 +498,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "The Shadowed Throne",
-    img: "lkoAJod.png",
+    img: "zlY4Cz4.png",
     opts: {
       games: ["WWII"],
       dlc: ["wwiidlc"],
@@ -473,7 +506,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "The Tortured Path",
-    img: "tDO653L.png",
+    img: "BLPPIJW.png",
     opts: {
       games: ["WWII"],
       dlc: ["wwiidlc"],
@@ -481,7 +514,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "The Frozen Dawn",
-    img: "dup7Nt6.png",
+    img: "6vrwYpu.png",
     opts: {
       games: ["WWII"],
       dlc: ["wwiidlc"],
@@ -489,28 +522,31 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Voyage of Despair",
-    img: "uQjbw1W.png",
+    img: "LOQFcDq.png",
     opts: {
       games: ["BO4"],
+      lc: ["nondlc"],
     },
   },
   {
     name: "IX",
-    img: "DfdaXPW.png",
+    img: "JrZajYU.png",
     opts: {
       games: ["BO4"],
+      lc: ["nondlc"],
     },
   },
   {
     name: "Blood of the Dead",
-    img: "wVCcens.png",
+    img: "emc41pY.png",
     opts: {
       games: ["BO4"],
+      lc: ["nondlc"],
     },
   },
   {
     name: "Classified",
-    img: "EpHQbiY.png",
+    img: "WJRu2PK.png",
     opts: {
       games: ["BO4"],
       dlc: ["bo4dlc"],
@@ -518,7 +554,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Dead of the Night",
-    img: "kJbv4dc.png",
+    img: "j3umEnF.png",
     opts: {
       games: ["BO4"],
       dlc: ["bo4dlc"],
@@ -526,7 +562,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Ancient Evil",
-    img: "Fyn5yVx.png",
+    img: "thvxdcG.png",
     opts: {
       games: ["BO4"],
       dlc: ["bo4dlc"],
@@ -534,7 +570,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Alpha Omega",
-    img: "39KYpvW.png",
+    img: "mVFMl12.png",
     opts: {
       games: ["BO4"],
       dlc: ["bo4dlc"],
@@ -542,7 +578,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Tag Der Toten",
-    img: "5yihisu.png",
+    img: "tn1pQDT.png",
     opts: {
       games: ["BO4"],
       dlc: ["bo4dlc"],
@@ -550,73 +586,86 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Die Maschine",
-    img: "2ppPxny.png",
+    img: "XZYyg1S.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["nondlc"],
     },
   },
   {
-    name: "Dead Ops Arcade 3",
-    img: "zL4S8Mj.png",
+    name: "Dead Ops Arcade 3: Rise of the Mamaback",
+    img: "0c0eMsy.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["nondlc"],
       DOA: true,
     },
   },
   {
     name: "Firebase Z",
-    img: "LgvoTaJ.png",
+    img: "tgMBhPm.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["cwdlc"],
     },
   },
   {
     name: "Outbreak (Cold War)",
-    img: "VbqXiB6.png",
+    img: "QxF56OX.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["cwdlc"],
+      NRB: true,
     },
   },
   {
     name: "Mauer Der Toten",
-    img: "OBqgP48.png",
+    img: "qr2VzcO.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["cwdlc"],
     },
   },
   {
     name: "Forsaken",
-    img: "sNw61ap.png",
+    img: "IAkR2Ko.png",
     opts: {
       games: ["BOCW"],
+      dlc: ["cwdlc"],
     },
   },
   {
     name: "Der Anfang",
-    img: "sLiqEBA.png",
+    img: "h0AoJpi.png",
     opts: {
       games: ["VG"],
+      dlc: ["nondlc"],
+      NRB: true,
     },
   },
   {
     name: "Terra Maledicta",
-    img: "6jq6eh6.png",
+    img: "ekwE13B.png",
     opts: {
       games: ["VG"],
+      dlc: ["vgdlc"],
+      NRB: true,
     },
   },
   {
     name: "Shi No Numa (Vanguard)",
-    img: "090hLPL.png",
+    img: "LX0Azrm.png",
     opts: {
       games: ["VG"],
+      dlc: ["vgdlc"],
     },
   },
   {
     name: "The Archon",
-    img: "y0UXwFO.png",
+    img: "ziRbisb.png",
     opts: {
       games: ["VG"],
+      dlc: ["vgdlc"],
     },
   },
 ];
