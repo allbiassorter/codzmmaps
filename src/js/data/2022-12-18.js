@@ -525,7 +525,7 @@ dataSet[dataSetVersion].characterData = [
     img: "LOQFcDq.png",
     opts: {
       games: ["BO4"],
-      lc: ["nondlc"],
+      dlc: ["nondlc"],
     },
   },
   {
@@ -533,7 +533,7 @@ dataSet[dataSetVersion].characterData = [
     img: "JrZajYU.png",
     opts: {
       games: ["BO4"],
-      lc: ["nondlc"],
+      dlc: ["nondlc"],
     },
   },
   {
@@ -541,7 +541,7 @@ dataSet[dataSetVersion].characterData = [
     img: "emc41pY.png",
     opts: {
       games: ["BO4"],
-      lc: ["nondlc"],
+      dlc: ["nondlc"],
     },
   },
   {
