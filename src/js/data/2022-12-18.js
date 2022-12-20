@@ -410,7 +410,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Shangri-La (ZC)",
-    img: "3pDRgvR.png",
+    img: "YucW4Ys.png",
     opts: {
       games: ["BO3"],
       dlc: ["bo3zc"],
