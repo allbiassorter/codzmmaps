@@ -194,21 +194,18 @@ label:hover {
   font-size: 0.75em;
   display: flex;
   align-content: flex-start;
-  width: 80%;
-  margin: 2em auto;
 }
 
 @media all and (min-width: 600px) {
   .results {
-    flex-flow: column wrap;
-    max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
+    flex-direction: column;
     /* 2px for borders */
   }
 }
 
 @media all and (max-width: 600px) {
   .results {
-    flex-flow: column nowrap;
+    flex-direction: column;
   }
 }
 
@@ -219,7 +216,6 @@ label:hover {
   width: 211px;
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid #000;
-  margin-right: 5px;
 }
 
 .result.image {
@@ -291,12 +287,7 @@ a:visited {
 }
 
 .wrapper {
-  width: 220px;
-  height: 20px;
-  clip: rect(
-    0,
-    220px,
-    20px,
-    0
-  ); /* defines a rectangle around the wrapper element that includes the entire width and height of the element */
+  width: 211px;
+  margin: 2em auto;
+  margin-bottom: 5px;
 }
