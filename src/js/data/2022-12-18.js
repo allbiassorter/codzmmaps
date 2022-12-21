@@ -73,6 +73,12 @@ dataSet[dataSetVersion].options = [
       },
       { name: "World at War DLCs", key: "wawdlc" },
       { name: "Black Ops 1 DLCs", key: "bo1dlc" },
+      {
+        name: "Black Ops 1 WAW DLCs",
+        tooltip:
+          "Keep this enabled if you want the World at War maps on Black Ops 1",
+        key: "bo1waw",
+      },
       { name: "Black Ops 2 DLCs", key: "bo2dlc" },
       {
         name: "Advanced Warfare DLCs",
@@ -83,7 +89,8 @@ dataSet[dataSetVersion].options = [
       { name: "Black Ops 3 DLCs ", key: "bo3dlc" },
       {
         name: "Black Ops 3 ZC",
-        tooltip: "This will only disable Zombies Chronicles",
+        tooltip:
+          "Keep this enabled if you want Zombies Chronicles in your sorter",
         key: "bo3zc",
       },
       { name: "Infinite Warfare DLCs", key: "iwdlc" },
@@ -205,6 +212,38 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       games: ["BO1"],
       dlc: ["bo1dlc"],
+    },
+  },
+  {
+    name: "Nacht der Untoten (BO1)",
+    img: "kx5GMnq.png",
+    opts: {
+      games: ["BO1"],
+      dlc: ["bo1waw"],
+    },
+  },
+  {
+    name: "Verrückt (BO1)",
+    img: "roWjvm5.png",
+    opts: {
+      games: ["BO1"],
+      dlc: ["bo1waw"],
+    },
+  },
+  {
+    name: "Shi No Numa (BO1)",
+    img: "MuGJt6x.png",
+    opts: {
+      games: ["BO1"],
+      dlc: ["bo1waw"],
+    },
+  },
+  {
+    name: "Der Riese (BO1)",
+    img: "SPJTCQd.png",
+    opts: {
+      games: ["BO1"],
+      dlc: ["bo1waw"],
     },
   },
   {
@@ -404,7 +443,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Ascension (ZC)",
     img: "lnl6jyC.png",
     opts: {
-      ggames: ["BO3"],
+      games: ["BO3"],
       dlc: ["bo3zc"],
     },
   },
@@ -477,7 +516,7 @@ dataSet[dataSetVersion].characterData = [
     img: "3tvLQRX.png",
     opts: {
       games: ["WWII"],
-      lc: ["nondlc"],
+      dlc: ["nondlc"],
     },
   },
   {
@@ -485,7 +524,7 @@ dataSet[dataSetVersion].characterData = [
     img: "GQsE6Xh.png",
     opts: {
       games: ["WWII"],
-      lc: ["nondlc"],
+      dlc: ["nondlc"],
     },
   },
   {
