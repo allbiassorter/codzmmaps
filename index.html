@@ -8,11 +8,12 @@
     <link rel="icon" href="src/assets/suplewich.ico" type="image/x-icon" />
     <meta charset="utf-8" />
     <meta name="og:site_name" content="All Call of Duty Zombies Map Sorter" />
+    <meta name="viewport" content="width=device-width" />
     <meta
       name="og:description"
       content="A simple website for sorting All Call of Duty Zombies Map Sorter in a formatted list."
     />
-    <meta name="og:image" content="https://imgur.com/wYEJ0m8.png" />
+    <meta name="og:image" content="https://i.imgur.com/U4jcXVx.png" />
     <title>All Call of Duty Zombies Map Sorter</title>
 
     <link rel="stylesheet" type="text/css" href="src/css/reset.css" />
@@ -24,11 +25,11 @@
     <script src="src/js/html2canvas.min.js"></script>
     <script src="src/js/lz-string.min.js"></script>
     <script src="src/js/seedrandom.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script defer src="src/js/main.js"></script>
   </head>
 
   <body>
-    <div class="container">
+    <div id="vimberly" class="container">
       <div class="progress">
         <span class="progressbattle"></span>
         <div class="progressbar">
@@ -37,7 +38,7 @@
       </div>
 
       <div class="sorter">
-        <img src="src/assets/defaultL.jpg" class="left sort image" />
+        <img src="src/assets/defaultL.png" class="left sort image" />
 
         <div class="starting start button">
           All Call of Duty Zombies Map Sorter<br /><br />Click to Start
@@ -57,7 +58,7 @@
         <div class="finished getimg button">Generate Image</div>
         <div class="finished list button">Generate Text List</div>
 
-        <img src="src/assets/defaultR.jpg" class="right sort image" />
+        <img src="src/assets/defaultR.png" class="right sort image" />
 
         <div class="left sort text"><p></p></div>
         <div class="right sort text"><p></p></div>
@@ -69,6 +70,8 @@
       <div class="wrapper">
         <div class="results"></div>
       </div>
+
+      <button id="toggle">Switch Theme</button>
 
       <div class="info">
         <a href="https://discord.gg/XszrsUe">Discord</a> |
@@ -106,10 +109,17 @@
 
         <br /><br />
         <p>
-          12/21/22 - Added dark mode, fixed bugs with the filters & added a Black
-          Ops 1 WAW maps filter.
+          12/24/22 - Fixed dark mode, fixed bugs with the filters and brought
+          Quality of Life improvements to the filters.
         </p>
-        <p>12/18/22 - Major updates.</p>
+        <p>
+          12/21/22 - Added dark mode, fixed bugs with the filters & added a
+          Black Ops 1 WAW maps filter.
+        </p>
+        <p>
+          12/18/22 - Switched site hosting, added images, saving, filters, undo,
+          three different options to save your results.
+        </p>
       </div>
     </div>
   </body>

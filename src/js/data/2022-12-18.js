@@ -359,7 +359,7 @@ dataSet[dataSetVersion].characterData = [
     },
   },
   {
-    name: "Dead Ops Arcade 2: Cyber’s Avenging",
+    name: "Dead Ops Arcade 2",
     img: "GyTcxJr.png",
     opts: {
       games: ["BO3"],
@@ -632,7 +632,7 @@ dataSet[dataSetVersion].characterData = [
     },
   },
   {
-    name: "Dead Ops Arcade 3: Rise of the Mamaback",
+    name: "Dead Ops Arcade 3",
     img: "0c0eMsy.png",
     opts: {
       games: ["BOCW"],

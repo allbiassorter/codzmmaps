@@ -736,7 +736,9 @@ function generateImage() {
       .replace("T", "(") +
     ").png";
 
-  html2canvas(document.querySelector(".results")).then((canvas) => {
+  html2canvas(document.querySelector(".results"), {
+    backgroundColor: "#var(--bg-color)",
+  }).then((canvas) => {
     const dataURL = canvas.toDataURL();
     const imgButton = document.querySelector(".finished.getimg.button");
     const resetButton = document.createElement("a");
@@ -814,9 +816,6 @@ function populateOptions() {
     }> ${name}</label></div>`;
   };
 
-  /** Clear out any previous options. */
-  optList.innerHTML = "";
-
   /** Insert sorter options and set grouped option behavior. */
   options.forEach((opt) => {
     if ("sub" in opt) {
@@ -840,14 +839,28 @@ function populateOptions() {
 
       const groupbox = document.getElementById(`cbgroup-${opt.key}`);
 
+      let subOptionStates = {}; // object to store the previous state of the sub-options
+
       groupbox.parentElement.addEventListener("click", () => {
         opt.sub.forEach((subopt, subindex) => {
-          document.getElementById(`cb-${opt.key}-${subindex}`).disabled =
-            !groupbox.checked;
+          const subOptionElement = document.getElementById(
+            `cb-${opt.key}-${subindex}`
+          );
+          subOptionElement.disabled = !groupbox.checked;
           if (groupbox.checked) {
-            document.getElementById(`cb-${opt.key}-${subindex}`).checked = true;
+            // store the previous state of the sub-option in the subOptionStates object
+            subOptionStates[subindex] = subOptionElement.checked;
+            subOptionElement.checked = false;
+          } else {
+            // restore the previous state of the sub-option
+            subOptionElement.checked = subOptionStates[subindex];
           }
         });
+      });
+
+      // set the checked property of all sub-options to true by default
+      opt.sub.forEach((subopt, subindex) => {
+        document.getElementById(`cb-${opt.key}-${subindex}`).checked = true;
       });
     } else {
       optList.insertAdjacentHTML(
@@ -1030,3 +1043,33 @@ function reduceTextWidth(text, font, width) {
 }
 
 window.onload = init;
+
+const vimberly = document.getElementById("vimberly");
+const toggleBtn = document.getElementById("toggle");
+
+let isDarkMode;
+
+// Helper function to easily switch theme
+function switchTheme(theme) {
+  if (theme === "light") {
+    vimberly.classList.add("theme-light");
+    vimberly.classList.remove("theme-dark");
+    isDarkMode = false;
+  } else if (theme === "dark") {
+    vimberly.classList.add("theme-dark");
+    vimberly.classList.remove("theme-light");
+    isDarkMode = true;
+  }
+}
+
+// Check for browser prefered theme setting
+(() => {
+  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? switchTheme("dark")
+    : switchTheme("light");
+})();
+
+// Toggle button logic
+toggleBtn.addEventListener("click", () => {
+  isDarkMode ? switchTheme("light") : switchTheme("dark");
+});
