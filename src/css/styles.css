@@ -25,7 +25,8 @@ body {
 
 .container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 1rem;
   min-height: 100vh;
