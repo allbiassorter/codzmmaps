@@ -33,13 +33,13 @@ body {
 
 .progress {
   margin: 1em auto;
-  width: 500px;
+  width: 100%;
   display: none;
 }
 
 .progressbar {
   position: relative;
-  width: 492px;
+  width: 90%;
   border: 1px solid black;
   padding: 3px;
   margin: 2px 0px;
@@ -47,7 +47,7 @@ body {
 
 .progresstext {
   position: absolute;
-  width: 492px;
+  width: 90%;
   margin: 3px 0px;
   text-align: center;
   font-size: 0.7em;
