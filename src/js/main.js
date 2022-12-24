@@ -835,7 +835,6 @@ function populateOptions() {
           )
         );
       });
-      optList.insertAdjacentHTML("beforeend", "<hr>");
 
       const groupbox = document.getElementById(`cbgroup-${opt.key}`);
 
