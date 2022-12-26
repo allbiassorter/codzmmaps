@@ -367,7 +367,7 @@ a:visited {
     width: 90%;
     border: 1px solid black;
     padding: 3px;
-    margin: 2px 0px;
+    margin: 0 auto;
   }
 
   .progresstext {
