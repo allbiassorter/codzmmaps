@@ -342,7 +342,7 @@ a:visited {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .container {
     display: flex;
     flex-flow: column;
@@ -354,7 +354,7 @@ a:visited {
   }
   .progress {
     margin: 1em auto;
-    width: 90%;
+    width: 100%;
     display: none;
   }
 
@@ -372,5 +372,15 @@ a:visited {
     margin: 3px 0px;
     text-align: center;
     font-size: 0.7em;
+  }
+
+  .sorter {
+    width: 100%;
+  }
+  .image.selector {
+    width: 100%;
+  }
+  .time.taken {
+    width: 100%;
   }
 }
