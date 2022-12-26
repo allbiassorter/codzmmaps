@@ -383,4 +383,8 @@ a:visited {
   .time.taken {
     width: 100%;
   }
+  .sorter > .image,
+  .sorter > .text {
+    width: 100;
+  }
 }
