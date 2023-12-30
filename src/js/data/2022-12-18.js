@@ -58,6 +58,11 @@ dataSet[dataSetVersion].options = [
         tooltip: "VG",
         key: "VG",
       },
+      {
+        name: "Call of Duty: Modern Warfare III",
+        tooltip: "MWIII",
+        key: "MWIII",
+      },
     ],
   },
   {
@@ -705,6 +710,15 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       games: ["VG"],
       dlc: ["vgdlc"],
+    },
+  },
+  {
+    name: "Urzikstan",
+    img: "NDByCkv.png",
+    opts: {
+      games: ["MWIII"],
+      dlc: ["nondlc"],
+      NRB: true,
     },
   },
 ];
