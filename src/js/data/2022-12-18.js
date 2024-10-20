@@ -63,6 +63,11 @@ dataSet[dataSetVersion].options = [
         tooltip: "MWIII",
         key: "MWIII",
       },
+      {
+        name: "Call of Duty: Black Ops 6",
+        tooltip: "BO6",
+        key: "BO6",
+      },
     ],
   },
   {
@@ -112,6 +117,12 @@ dataSet[dataSetVersion].options = [
         tooltip:
           "Keep this enabled if you want the Seasons maps (Terra-Archon) in your sorter",
         key: "vgdlc",
+      },
+      {
+        name: "Black Ops 6 DLCs",
+        tooltip:
+          "Keep this enabled if you want the Seasons maps in your sorter",
+        key: "bo6dlc",
       },
     ],
   },
@@ -719,6 +730,22 @@ dataSet[dataSetVersion].characterData = [
       games: ["MWIII"],
       dlc: ["nondlc"],
       NRB: true,
+    },
+  },
+  {
+    name: "Terminus",
+    img: "PqMzrxi.png",
+    opts: {
+      games: ["BO6"],
+      dlc: ["nondlc"],
+    },
+  },
+  {
+    name: "Liberty Falls",
+    img: "oFj9BsR.png",
+    opts: {
+      games: ["BO6"],
+      dlc: ["nondlc"],
     },
   },
 ];
