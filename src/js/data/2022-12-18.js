@@ -748,4 +748,20 @@ dataSet[dataSetVersion].characterData = [
       dlc: ["nondlc"],
     },
   },
+  {
+    name: "Citadelle des Morts",
+    img: "rhH64N0.png",
+    opts: {
+      games: ["BO6"],
+      dlc: ["bo6dlc"],
+    },
+  },
+  {
+    name: "The Tomb",
+    img: "9nFgJHd.png",
+    opts: {
+      games: ["BO6"],
+      dlc: ["bo6dlc"],
+    },
+  },
 ];
